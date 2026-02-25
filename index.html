@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+<title>あゆび Instagram戦略書 v9</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap">
+<style>
+:root { color-scheme: light only; }
+
+@media (prefers-color-scheme: dark) {
+  html, body { background-color: #F8F6F3 !important; color: #5C554D !important; }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+  background-color: #F8F6F3 !important;
+  color: #5C554D !important;
+  line-height: 1.85;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap { max-width: 520px; margin: 0 auto; padding: 0 20px; }
+
+/* ══ HERO ══ */
+.hero {
+  background-color: #FFFFFF !important;
+  color: #5C554D !important;
+  text-align: center;
+  padding: 56px 24px 40px;
+  border-bottom: 1px solid #E6E1DB;
+  box-shadow: 0 4px 24px rgba(120,110,100,.06);
+}
+.hero-badge {
+  display: inline-block;
+  border: 1.5px solid #BFA29D;
+  color: #BFA29D;
+  border-radius: 100px;
+  padding: 6px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #6B5D54;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+.hero h1 span { color: #BFA29D; }
+.hero-sub { font-size: 16px; color: #8A7F76; margin-bottom: 16px; line-height: 1.7; }
+.hero-meta { font-size: 16px; color: #A69B92; }
+.hero-up {
+  display: inline-block; margin-top: 12px;
+  background: #F0E8EF; color: #9B7E9D;
+  font-size: 16px; font-weight: 700;
+  padding: 6px 18px; border-radius: 8px;
+}
+
+/* ══ SECTION ══ */
+.sec { padding: 40px 0 0; }
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D9D3CC 20%, #D9D3CC 80%, transparent);
+  margin: 40px 0 0;
+}
+.sec-head {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 22px; padding-bottom: 16px;
+  border-bottom: 2px solid #E6E1DB;
+}
+.sec-num {
+  width: 36px; height: 36px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 16px; color: #FFFFFF; flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(120,110,100,.12);
+}
+.n-pk { background: #BFA29D; } .n-mv { background: #A68FA8; }
+.n-sg { background: #8FA88F; } .n-bg { background: #B5A78F; }
+.n-bl { background: #8FA5B5; } .n-wm { background: #AD7E68; }
+.sec-ttl { font-size: 22px; font-weight: 800; color: #6B5D54; }
+
+/* ══ CARD ══ */
+.cd {
+  background: #FFFFFF !important;
+  border: 1px solid #E6E1DB;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 12px rgba(120,110,100,.04);
+}
+.cd-ttl { font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #6B5D54; display: flex; align-items: center; gap: 8px; }
+.cd p { color: #7A7068; font-size: 16px; line-height: 1.85; }
+
+/* ══ CONCEPT ══ */
+.cpt {
+  background: #FFFFFF !important;
+  border: 2px solid #BFA29D;
+  border-radius: 20px;
+  padding: 28px 24px;
+  margin-bottom: 18px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(191,162,157,.1);
+}
+.cpt-lb { font-size: 16px; color: #BFA29D; letter-spacing: 3px; font-weight: 700; margin-bottom: 12px; }
+.cpt h3 { font-size: 18px; font-weight: 700; color: #6B5D54; line-height: 1.9; margin-bottom: 12px; }
+.cpt h3 mark { background: linear-gradient(transparent 55%, #F0D9D5 55%); padding: 0 3px; color: #6B5D54; }
+.cpt > p { color: #8A7F76; font-size: 16px; }
+
+/* ══ PROFILE ══ */
+.pf {
+  background: #FFFFFF !important; border: 1px solid #E6E1DB; border-radius: 16px;
+  padding: 24px; display: flex; align-items: flex-start; gap: 16px; margin-bottom: 18px;
+  box-shadow: 0 2px 12px rgba(120,110,100,.04);
+}
+.pf-av {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #F5EDEC; border: 2px solid #BFA29D;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; flex-shrink: 0;
+}
+.pf-name { font-weight: 700; font-size: 16px; margin-bottom: 4px; color: #6B5D54; }
+.pf-bio { color: #8A7F76; font-size: 16px; line-height: 1.7; white-space: pre-line; }
+
+/* ══ PILLAR ══ */
+.pl {
+  background: #FFFFFF !important; border: 1px solid #E6E1DB; border-radius: 16px;
+  padding: 24px; margin-bottom: 12px; position: relative; overflow: hidden;
+  box-shadow: 0 2px 12px rgba(120,110,100,.04);
+}
+.pl-bar { position: absolute; top: 0; left: 0; right: 0; height: 4px; }
+.pl-bar.pk { background: #BFA29D; } .pl-bar.mv { background: #A68FA8; }
+.pl-bar.sg { background: #8FA88F; } .pl-bar.bg { background: #B5A78F; }
+.pl .em { font-size: 24px; margin-bottom: 6px; }
+.pl h4 { font-size: 17px; font-weight: 700; margin-bottom: 8px; color: #6B5D54; }
+.pl .rat {
+  position: absolute; right: 16px; top: 14px;
+  font-size: 16px; font-weight: 700; color: #A69B92;
+  background: #F5F1ED; padding: 3px 12px; border-radius: 6px;
+}
+.pl p { font-size: 16px; color: #7A7068; line-height: 1.8; }
+
+/* ══ CALLOUT ══ */
+.co {
+  border-left: 4px solid #BFA29D;
+  background: #FBF7F6 !important;
+  border-radius: 0 14px 14px 0;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+}
+.co.mv { border-color: #A68FA8; background: #F7F3F8 !important; }
+.co.sg { border-color: #8FA88F; background: #F3F7F3 !important; }
+.co.bg { border-color: #B5A78F; background: #F8F5F0 !important; }
+.co.bl { border-color: #8FA5B5; background: #F2F6F9 !important; }
+.co.wm { border-color: #AD7E68; background: #F9F2ED !important; }
+.co p { font-size: 16px; color: #7A7068; line-height: 1.85; }
+.co strong { color: #6B5D54; font-weight: 700; }
+
+/* ══ SUBTITLE ══ */
+.st {
+  font-size: 18px; font-weight: 700; color: #6B5D54;
+  margin: 28px 0 14px; padding-left: 14px;
+  border-left: 4px solid #B5A78F;
+}
+
+.dsc { font-size: 16px; color: #8A7F76; margin-bottom: 16px; line-height: 1.85; }
+
+/* ══ FORMULA ══ */
+.fm {
+  background: #FFFFFF !important; border: 1px solid #E6E1DB; border-radius: 16px;
+  padding: 28px 22px; margin-bottom: 18px; text-align: center;
+  box-shadow: 0 2px 12px rgba(120,110,100,.04);
+}
+.fm-s {
+  background: #F0E8EF; border: 1px solid #D1C2D3; border-radius: 12px;
+  padding: 14px 18px; font-size: 16px; font-weight: 600; color: #6B5D54;
+  margin-bottom: 8px;
+}
+.fm-a { color: #A68FA8; font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+.fm-n { font-size: 16px; color: #A69B92; margin-top: 8px; }
+
+/* ══ VS ══ */
+.vs { border-radius: 14px; padding: 20px; margin-bottom: 8px; }
+.vs.bad { background: #FBF6F5 !important; border: 1.5px solid #D8BBB8; }
+.vs.good { background: #F3F7F3 !important; border: 1.5px solid #B0C5AE; }
+.vs-lb { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.vs.bad .vs-lb { color: #BFA29D; }
+.vs.good .vs-lb { color: #6E9468; }
+.vs h4 { font-size: 16px; font-weight: 700; color: #6B5D54; margin-bottom: 6px; }
+.vs p { font-size: 16px; color: #7A7068; }
+.vs-pair { margin-bottom: 14px; }
+
+/* ══ NETA ITEM ══ */
+.ni {
+  background: #FFFFFF !important; border: 1px solid #E6E1DB; border-radius: 14px;
+  padding: 20px 22px; margin-bottom: 10px;
+  box-shadow: 0 1px 8px rgba(120,110,100,.03);
+}
+.ni-tag {
+  display: inline-block; font-size: 16px; font-weight: 700;
+  padding: 4px 14px; border-radius: 8px; margin-bottom: 8px;
+}
+.t-grwm { background: #F0E8EF; color: #8E6F90; }
+.t-story { background: #F4F0EA; color: #96825E; }
+.t-vlog { background: #EBF0EB; color: #5E7F5A; }
+.t-mind { background: #F5EDEC; color: #BFA29D; }
+.t-time { background: #EBF0F5; color: #6889A0; }
+.t-lv { background: #F5F1ED; color: #96825E; }
+.ni h4 { font-size: 16px; font-weight: 700; color: #6B5D54; margin-bottom: 6px; }
+.ni p { font-size: 16px; color: #7A7068; line-height: 1.8; }
+
+/* ══ BADGE ══ */
+.nb {
+  display: inline-block; background: #BFA29D; color: #FFFFFF;
+  font-size: 16px; font-weight: 700; padding: 2px 10px;
+  border-radius: 6px; margin-left: 6px; vertical-align: middle;
+}
+
+/* ══ MONEY CARD ══ */
+.mc {
+  background: #FFFFFF !important; border: 1px solid #E6E1DB; border-radius: 16px;
+  padding: 24px; margin-bottom: 12px;
+  box-shadow: 0 2px 12px rgba(120,110,100,.04);
+}
+.mc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.mc-ico {
+  width: 44px; height: 44px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; flex-shrink: 0;
+}
+.mc-ico.i1 { background: #F0E8EF; } .mc-ico.i2 { background: #EBF0F5; }
+.mc-ico.i3 { background: #EBF0EB; } .mc-ico.i4 { background: #F5EDEC; }
+.mc-w { font-size: 16px; color: #A69B92; text-align: right; }
+.mc-a { font-size: 17px; font-weight: 700; color: #BFA29D; text-align: right; }
+.mc h4 { font-size: 16px; font-weight: 700; color: #6B5D54; margin-bottom: 6px; }
+.mc > p { font-size: 16px; color: #7A7068; line-height: 1.8; }
+
+/* ══ SCHEDULE ══ */
+.sc {
+  background: #FFFFFF !important; border: 1px solid #E6E1DB; border-radius: 14px;
+  padding: 20px 22px; margin-bottom: 10px;
+  display: flex; gap: 14px; align-items: center;
+  box-shadow: 0 1px 8px rgba(120,110,100,.03);
+}
+.sc-d {
+  background: #F0E8EF; color: #8E6F90; font-weight: 700;
+  font-size: 16px; padding: 6px 16px; border-radius: 8px; flex-shrink: 0;
+}
+.sc h4 { font-size: 16px; font-weight: 700; color: #6B5D54; margin-bottom: 2px; }
+.sc p { font-size: 16px; color: #8A7F76; }
+
+/* ══ TAGS ══ */
+.tg { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.tg span {
+  font-size: 16px; padding: 6px 16px;
+  background: #FFFFFF !important; border: 1px solid #E6E1DB;
+  border-radius: 100px; color: #8A7F76;
+}
+
+/* ══ TIMELINE ══ */
+.tl { position: relative; padding-left: 24px; margin-bottom: 18px; }
+.tl::before {
+  content: ''; position: absolute; left: 7px; top: 4px; bottom: 4px;
+  width: 3px; border-radius: 3px;
+  background: linear-gradient(180deg, #BFA29D, #8FA88F, #B5A78F);
+}
+.tl-i {
+  position: relative; margin-bottom: 18px;
+  background: #FFFFFF !important; border: 1px solid #E6E1DB;
+  border-radius: 14px; padding: 22px;
+  box-shadow: 0 2px 12px rgba(120,110,100,.04);
+}
+.tl-i::before {
+  content: ''; position: absolute; left: -20px; top: 26px;
+  width: 12px; height: 12px; border-radius: 50%;
+  border: 3px solid #BFA29D; background: #FFFFFF;
+}
+.tl-i:nth-child(2)::before { border-color: #8FA88F; }
+.tl-i:nth-child(3)::before { border-color: #B5A78F; }
+.tl-i h4 { font-size: 18px; font-weight: 700; color: #6B5D54; margin-bottom: 4px; }
+.tl-i .sub { font-size: 16px; color: #A69B92; }
+.tl-i .tar {
+  display: inline-block; background: #F5EDEC; color: #BFA29D;
+  font-size: 16px; font-weight: 700; padding: 4px 14px;
+  border-radius: 8px; margin: 6px 0 10px;
+}
+.tl-i p { font-size: 16px; color: #7A7068; }
+
+/* ══ IMPROVE ══ */
+.imp {
+  background: #FFFFFF !important; border: 1px solid #E6E1DB; border-radius: 14px;
+  padding: 22px; margin-bottom: 10px;
+  box-shadow: 0 1px 8px rgba(120,110,100,.03);
+}
+.imp-n { font-size: 16px; font-weight: 700; color: #AD7E68; letter-spacing: 1px; margin-bottom: 4px; }
+.imp h4 { font-size: 16px; font-weight: 700; color: #6B5D54; margin-bottom: 6px; }
+.imp p { font-size: 16px; color: #7A7068; }
+
+/* ══ PHASE ══ */
+.ph {
+  background: #FFFFFF !important; border: 1px solid #E6E1DB; border-radius: 16px;
+  padding: 24px; margin-bottom: 14px;
+  box-shadow: 0 2px 12px rgba(120,110,100,.04);
+}
+.ph-top {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #F0ECE8;
+}
+.ph-lb {
+  font-size: 16px; font-weight: 700; padding: 5px 14px;
+  border-radius: 8px; background: #F0E8EF; color: #8E6F90;
+}
+.ph-lb.hot { background: #F5EDEC; color: #BFA29D; }
+.ph-rv { font-size: 20px; font-weight: 800; color: #BFA29D; }
+.ph p { font-size: 16px; color: #7A7068; line-height: 1.85; }
+.up {
+  display: inline-block; background: #EBF0EB; color: #5E7F5A;
+  font-size: 16px; font-weight: 700; padding: 2px 10px;
+  border-radius: 6px; margin-left: 4px;
+}
+
+/* ══ FOOTER ══ */
+.ft {
+  text-align: center; padding: 40px 0 60px;
+  border-top: 2px solid #E6E1DB; margin-top: 40px;
+  color: #A69B92; font-size: 16px;
+}
+.ft .ut { display: block; margin-top: 8px; color: #BFA29D; font-size: 16px; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">STRATEGY v9</div>
+  <h1>コンプレックスから<span>垢抜けた</span><br>夜型女子の暮らし</h1>
+  <p class="hero-sub">あゆび × 垢抜けストーリー × 自己肯定感<br>× ASMR GRWM × 犬との丁寧な暮らし</p>
+  <p class="hero-meta">目標：3ヶ月でフォロワー1万人（4/30まで）</p>
+  <div class="hero-up">v9：自己肯定感を完全統合</div>
+</div>
+
+<div class="wrap">
+
+<!-- 1 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-pk">1</div><div class="sec-ttl">コンセプトの核</div></div>
+  <div class="cpt">
+    <div class="cpt-lb">CORE STORY</div>
+    <h3><mark>自己肯定感が低くてコンプレックスだらけ</mark>だった普通の子が、夜の仕事で美意識を磨いて垢抜けて、<mark>自分を好きになれて</mark>、今は犬と丁寧に暮らしている</h3>
+    <p>垢抜け＝外見の変化だけでなく、自己肯定感＝内面の変化も含めた「トータルの変身ストーリー」に20代前半の女の子が憧れる。</p>
+  </div>
+  <div class="cd"><div class="cd-ttl">🔑 なぜ「垢抜け × 自己肯定感」の2軸なのか</div><p>垢抜けアカウントは山ほどある。でも「垢抜けたら自己肯定感も上がった」「自己肯定感を上げたから垢抜けられた」という内面と外見の相互作用まで語れるアカウントはほぼない。この2つはターゲット層にとって表裏一体の悩み。両方セットで語ることで信頼される。そしてnoteも教材も2テーマ分作れる＝収益が倍になる。</p></div>
+  <div class="cd"><div class="cd-ttl">🌙 表の見え方（動画の印象）</div><p>PMに起きて、丁寧にスキンケアして、可愛くメイクして、犬に見送られて出かける夜型の女の子。時間帯が逆なことで「なんの仕事だろう？」という好奇心。仕事名は出さず匂わせ。動画のクオリティ・美意識の高さ・犬との暮らしの温かさで「こういう生活がしたい」と思わせる。</p></div>
+  <div class="cd"><div class="cd-ttl">🔮 裏の文脈（ストーリーズで徐々に見せる）</div><p>「実は昔コンプレックスだらけで自己肯定感も底だった」「変わりたくて色々試した」「外見が変わったら自分を好きになれた」「自分を好きになったらもっと変われた」。垢抜けと自己肯定感は鶏と卵。この両方を語れることが最大の差別化。3,000人超から少しずつ出す。</p></div>
+  <div class="st">プロフィール設計案</div>
+  <div class="pf"><div class="pf-av">🐕</div><div><div class="pf-name">あゆび ｜ 24 ｜ 夜型女子の暮らし</div><div class="pf-bio">PMに始まる私の一日 🌙
+スキンケア｜メイク｜GRWM
+愛犬◯◯とふたり暮らし 🐾
+▼ 垢抜けコスメまとめ</div></div></div>
+</div>
+<div class="divider"></div>
+
+<!-- 2 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-mv">2</div><div class="sec-ttl">ネタの公式</div></div>
+  <div class="dsc">汎用的なTipsは作らない。全てのネタに「あゆびの実体験フィルター」を通す。</div>
+  <div class="fm">
+    <div class="fm-s">昔の私（コンプレックス・低い自己肯定感）</div>
+    <div class="fm-a">↓</div>
+    <div class="fm-s">変わった過程（何をしたか）</div>
+    <div class="fm-a">↓</div>
+    <div class="fm-s">今の私（ASMR GRWMで見せる）</div>
+    <div class="fm-n">この構造が全コンテンツとnote教材の骨格</div>
+  </div>
+  <div class="st">同じ題材でもこう変わる</div>
+  <div class="vs-pair"><div class="vs bad"><div class="vs-lb">❌ 埋もれるネタ</div><h4>崩れないベースメイクTOP3</h4><p>誰でも作れる。100万アカウントが同じことを言っている。</p></div><div class="vs good"><div class="vs-lb">✅ あゆびにしか作れないネタ</div><h4>肌コンプレックスだった私が夜勤でも崩れないベースに辿り着くまで</h4><p>実体験ストーリー＋結論。共感→保存→フォロー→教材購入の導線。</p></div></div>
+  <div class="vs-pair"><div class="vs bad"><div class="vs-lb">❌ 埋もれるネタ</div><h4>自己肯定感の上げ方5選</h4><p>自己啓発アカウントと被る。抽象的。</p></div><div class="vs good"><div class="vs-lb">✅ あゆびにしか作れないネタ</div><h4>自己肯定感が底だった私が「自分を好きになれた」きっかけ</h4><p>垢抜けと自己肯定感がセットで語られるから説得力がある。</p></div></div>
+  <div class="vs-pair"><div class="vs bad"><div class="vs-lb">❌ 埋もれるネタ</div><h4>おすすめスキンケアルーティン</h4><p>商品紹介になりがち。差別化ゼロ。</p></div><div class="vs good"><div class="vs-lb">✅ あゆびにしか作れないネタ</div><h4>夜勤で肌ボロボロだった私が辿り着いたスキンケア</h4><p>「夜勤」「肌ボロボロだった」が共感のフック。</p></div></div>
+</div>
+<div class="divider"></div>
+
+<!-- 3 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-sg">3</div><div class="sec-ttl">コンテンツ設計</div></div>
+  <div class="dsc">リール＝「憧れ」を作る装置。ストーリーズ＝「教育・共感・販売」の装置。混ぜない。</div>
+  <div class="st">リール動画（2本柱）</div>
+  <div class="pl"><div class="pl-bar mv"></div><div class="rat">60%</div><div class="em">✨</div><h4>融合GRWM</h4><p>海外ASMRの映像美×犬との自然な共演。字幕なしがベース。たまに字幕あり版。</p></div>
+  <div class="pl"><div class="pl-bar sg"></div><div class="rat">40%</div><div class="em">🌙</div><h4>暮らしVlog</h4><p>犬との日常＋PC作業シーン＋丁寧な暮らし。「この子何してる人？」の好奇心。</p></div>
+  <div class="st">ストーリーズ（教育＋共感＋販売）<span class="nb">v9強化</span></div>
+  <div class="pl"><div class="pl-bar bg"></div><div class="em">💎</div><h4>垢抜けストーリー＋教育＋日常</h4><p>「昔の私→今の私」の外見変化、ビフォーアフター、垢抜けTips、副業の匂わせ、note予告。</p></div>
+  <div class="pl"><div class="pl-bar pk"></div><div class="em">🩷</div><h4>自己肯定感ストーリー<span class="nb">NEW</span></h4><p>「自分を好きになれなかった頃の話」「自己肯定感が上がったきっかけ」「マインドの変化」。週2〜3回。</p></div>
+  <div class="co"><p><strong>なぜ自己肯定感をストーリーズに追加？</strong><br>フォロワーが本当に欲しいのは「自分を好きになること」。両方語ることで垢抜けnoteも自己肯定感noteも売れる。収益源が2倍に。</p></div>
+  <div class="co mv"><p><strong>なぜリールとストーリーズを分けるのか</strong><br>リールは発見タブから新規が見る→「憧れ」だけ。ストーリーズはフォロワーだけが見る→深い話ができる。</p></div>
+</div>
+<div class="divider"></div>
+
+<!-- 4 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-bg">4</div><div class="sec-ttl">ネタストック</div></div>
+  <div class="dsc">リール20本＋ストーリーズ22本。v9で自己肯定感ストーリーズ7本追加。</div>
+  <div class="st">リール：融合GRWM（12本）</div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM</span><h4>PM6:00 犬に起こされるモーニングルーティン</h4><p>基本版。犬起こし→スキンケアASMR→メイク→着替え→犬にバイバイ。字幕なし。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM</span><h4>AM3:00 犬が待ってる家に帰るナイトルーティン</h4><p>帰宅→犬お出迎え→クレンジングASMR→PC作業→犬と就寝。字幕なし。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM</span><h4>雨の日GRWM｜雨音ASMR</h4><p>雨音×スキンケア音のASMRダブル。犬が窓を眺めるカット。字幕なし。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM</span><h4>「大事な日」の本気メイクGRWM</h4><p>アイテム数多め。犬がブラシに興味。字幕なし。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM</span><h4>休日のミニマルメイク｜犬と過ごすだけの日</h4><p>軽めメイク→散歩準備。リラックス。字幕なし。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM</span><h4>給料日の「ご褒美メイク」GRWM｜新コスメ開封</h4><p>開封ASMR→即使用。アフィリ導線。字幕なし。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM</span><h4>1週間コーデまとめ × 毎朝犬に見送られる</h4><p>OOTDダイジェスト。毎日犬とバイバイ。字幕なし。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM</span><h4>季節の変わり目スキンケア切り替えGRWM</h4><p>新スキンケアの質感ASMR。字幕なし。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM 字幕あり</span><h4>友達との予定前GRWM｜犬に「行かないで」される</h4><p>字幕：「...すぐ帰るから」。掛け合いで親近感。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM 字幕あり</span><h4>犬が邪魔してくるGRWM｜着替えさせてくれない</h4><p>字幕：「着替えさせて...😂」バズりやすいパターン。</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM 字幕あり</span><h4>帰宅したら犬が拗ねてた日のナイトルーティン</h4><p>字幕：「ごめんって」「許して」</p></div>
+  <div class="ni"><span class="ni-tag t-grwm">GRWM 字幕あり</span><h4>犬がスキンケア中に膝に来た日のGRWM</h4><p>字幕：「...ちょっと待って」。ギャップで刺さる。</p></div>
+
+  <div class="st">リール：暮らしVlog（8本）</div>
+  <div class="ni"><span class="ni-tag t-vlog">Vlog</span><h4>深夜帰宅→犬が玄関で待ってた日の夜</h4><p>帰宅のリアル感×犬の癒し。最強コンテンツ。</p></div>
+  <div class="ni"><span class="ni-tag t-vlog">Vlog</span><h4>カフェでPC作業する休日｜犬を膝に乗せながら</h4><p>画面映さず手元とタイピング音だけ。</p></div>
+  <div class="ni"><span class="ni-tag t-vlog">Vlog</span><h4>夜勤前の1時間｜PCで副業タイム</h4><p>横顔＋タイピングASMR。犬が膝に来て中断。</p></div>
+  <div class="ni"><span class="ni-tag t-vlog">Vlog</span><h4>自宅でPC作業→犬に中断される→散歩に行く</h4><p>「犬に負けた」の微笑ましさ。PC匂わせ＋犬。</p></div>
+  <div class="ni"><span class="ni-tag t-vlog">Vlog</span><h4>犬と一緒の朝ごはん（夕方だけど）</h4><p>時間軸のギャップ。料理ASMR。夜型の暮らし。</p></div>
+  <div class="ni"><span class="ni-tag t-vlog">Vlog</span><h4>給料日に買ったコスメ開封｜犬が興味津々</h4><p>開封ASMR＋犬のリアクション。アフィリ導線。</p></div>
+  <div class="ni"><span class="ni-tag t-vlog">Vlog</span><h4>お部屋の模様替え｜作業スペースも作った</h4><p>PCデスクを置くシーン。「何かを始めてる感」。</p></div>
+  <div class="ni"><span class="ni-tag t-vlog">Vlog</span><h4>新しいパジャマ開封ASMR｜自分に投資するようになった話</h4><p>開封ASMR×「自分にお金をかける」。</p></div>
+
+  <div class="st">ストーリーズ：垢抜け系（10本）</div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>ビフォーアフター公開｜昔の私と今の私</h4><p>写真で変化を可視化。保存・シェア・DM爆発。</p></div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>垢抜けるために最初にやった3つのこと</h4><p>変化の起点。note教材への導線。</p></div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>夜勤で肌ボロボロだった私が辿り着いたスキンケア</h4><p>夜型×肌悩みのリアル。アフィリ導線あり。</p></div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>眉毛で顔が変わった｜眉毛ビフォーアフター</h4><p>パーツ単位の変化。写真付き。</p></div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>髪型で垢抜けた話｜似合う髪型の見つけ方</h4><p>ヘアスタイルの変遷。美容室アフィリ。</p></div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>服選びが分からなかった私のコーデの考え方</h4><p>ファッション変化の過程。</p></div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>垢抜けるまでにかかったお金と時間の話</h4><p>リアルな数字は保存される。noteへの導線。</p></div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>メイクが分からなかった私が毎日メイクするようになるまで</h4><p>同じ悩みの子に刺さる。</p></div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>「この美容液だけはガチ」｜肌が変わったアイテム</h4><p>単品レビュー。アフィリ直結。</p></div>
+  <div class="ni"><span class="ni-tag t-story">垢抜け</span><h4>「なんで変わろうと思ったの？」に答える</h4><p>マインド面。自己肯定感ストーリーへの橋渡し。</p></div>
+
+  <div class="st">ストーリーズ：自己肯定感系（7本）<span class="nb">NEW</span></div>
+  <div class="ni"><span class="ni-tag t-mind">自己肯定感</span><h4>自己肯定感が底だった頃の話</h4><p>ターゲットの核心に刺さる。「私もそうだった」の共感爆発。note最強導線。</p></div>
+  <div class="ni"><span class="ni-tag t-mind">自己肯定感</span><h4>自分を好きになれたきっかけ｜垢抜けだけじゃなかった</h4><p>外見の変化だけでは足りなかった。内面で何を変えたかを語る。</p></div>
+  <div class="ni"><span class="ni-tag t-mind">自己肯定感</span><h4>「自分なんか」が口癖だった頃にやめた3つのこと</h4><p>具体的な行動変容。保存されやすいリスト系。</p></div>
+  <div class="ni"><span class="ni-tag t-mind">自己肯定感</span><h4>人と比べて落ち込んでた私が「自分軸」を見つけた話</h4><p>SNS疲れ・比較癖のあるフォロワーに刺さる。</p></div>
+  <div class="ni"><span class="ni-tag t-mind">自己肯定感</span><h4>夜の仕事で学んだ「自分の価値」の話</h4><p>あゆびにしか語れないテーマ。</p></div>
+  <div class="ni"><span class="ni-tag t-mind">自己肯定感</span><h4>犬を飼って自己肯定感が変わった話</h4><p>犬との暮らし×自己肯定感。リールの犬コンテンツと繋ぐ架け橋。</p></div>
+  <div class="ni"><span class="ni-tag t-mind">自己肯定感</span><h4>「自己肯定感の上げ方、まとめようと思ってる」予告</h4><p>noteの事前告知。「欲しい人🙋‍♀️」アンケートで需要確認。</p></div>
+
+  <div class="st">ストーリーズ：副業・販売系（5本）</div>
+  <div class="ni"><span class="ni-tag t-story">副業</span><h4>本業以外にPCで色々やってる話</h4><p>副業の匂わせ。「何やってるの？」のDMを集める。</p></div>
+  <div class="ni"><span class="ni-tag t-story">販売</span><h4>「垢抜け方法まとめようと思ってる」予告</h4><p>note事前告知。アンケートで需要確認。</p></div>
+  <div class="ni"><span class="ni-tag t-story">副業</span><h4>副業で月○万稼げるようになった話</h4><p>5,000人〜で具体数字。SNS教材への導線。</p></div>
+  <div class="ni"><span class="ni-tag t-story">販売</span><h4>「自分で稼ぐ力をつけたい人」集合って投稿</h4><p>SNS教材・コンサルの予告。</p></div>
+  <div class="ni"><span class="ni-tag t-story">販売</span><h4>「外見も内面も変わりたい人」に向けた教材セットの告知</h4><p>垢抜け×自己肯定感セット教材の予告。</p></div>
+  <div class="co"><p><strong>垢抜け × 自己肯定感の週リズム</strong><br>月〜水に垢抜け系、木〜土に自己肯定感系。「外見だけじゃなく内面の話もしてくれる」→どちらのnoteも買う確率UP。</p></div>
+</div>
+<div class="divider"></div>
+
+<!-- 5 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-mv">5</div><div class="sec-ttl">動画の「融合」設計</div></div>
+  <div class="cpt" style="border-color:#A68FA8"><div class="cpt-lb" style="color:#A68FA8">FUSION FORMULA</div><h3>海外ASMRの「撮り方＋編集」で進行。<mark>字幕なし</mark>がベース。たまに字幕あり版を混ぜる。</h3><p>犬との掛け合いが面白い時だけ「字幕あり版」として出す。字幕なしがデフォルトだから「今日は喋ってる！」という特別感。</p></div>
+  <div class="st">シーン設計（30〜40秒）</div>
+  <div class="ni"><span class="ni-tag t-time">0-3秒</span><h4>フック：犬に起こされる</h4><p>暗い寝室。「PM 6:00」テロップ。犬の肉球フレームイン→ペロペロ。冒頭3秒で「夜型」「犬」「ASMR」が全部伝わる。</p></div>
+  <div class="ni"><span class="ni-tag t-time">3-10秒</span><h4>スキンケア：犬が膝に来る</h4><p>クローズアップで化粧水・美容液。ポンプ音ASMR。犬が膝に乗る→手が止まる。</p></div>
+  <div class="ni"><span class="ni-tag t-time">10-20秒</span><h4>メイク：犬が横で見てる</h4><p>ブラシのクローズアップ、パレットのクリック音。鏡越しに犬がちらっと映る。</p></div>
+  <div class="ni"><span class="ni-tag t-time">20-30秒</span><h4>着替え：犬が足元をウロウロ</h4><p>後ろ姿でOOTD。ヘアセット→着替え。犬が足元にまとわりつく。</p></div>
+  <div class="ni"><span class="ni-tag t-time">30-40秒</span><h4>エンディング：犬にバイバイ</h4><p>犬を抱き上げる→香水をシュッ→バッグを持って出発。</p></div>
+  <div class="st">ナイトルーティン版（AM帰宅）</div>
+  <div class="ni"><span class="ni-tag t-time">0-3秒</span><h4>帰宅→犬がお出迎え</h4><p>「AM 3:00」テロップ。ドア→犬が走ってくる。</p></div>
+  <div class="ni"><span class="ni-tag t-time">3-15秒</span><h4>クレンジング→ナイトケア</h4><p>メイク落とし・洗顔・化粧水のASMR。犬が洗面所の外で待ってる。</p></div>
+  <div class="ni"><span class="ni-tag t-time">15-25秒</span><h4>着替え→PC作業→リラックス</h4><p>パジャマ→タイピング音ASMR（画面映さない）→犬が膝に来て中断→お茶。</p></div>
+  <div class="ni"><span class="ni-tag t-time">25-35秒</span><h4>就寝：犬と一緒にベッドへ</h4><p>ライトを消す音。犬が隣に丸まる。暗転。</p></div>
+  <div class="st">撮影・編集のポイント</div>
+  <div class="imp"><div class="imp-n">POINT 01</div><h4>時刻テロップを大きく具体的に</h4><p>「PM 6:00」をデジタル時計風フォントで画面中央に。</p></div>
+  <div class="imp"><div class="imp-n">POINT 02</div><h4>クローズアップ＋暖色ライト</h4><p>手元中心。暖色の間接照明。商品ラベルが読めるアングル。</p></div>
+  <div class="imp"><div class="imp-n">POINT 03</div><h4>ASMRの音は「編集で強調」</h4><p>ボトル音・水の音・ブラシ音を持ち上げる。BGMはASMR音より下。</p></div>
+  <div class="imp"><div class="imp-n">POINT 04</div><h4>犬のシーンは「狙わず拾う」</h4><p>日常的にスマホで撮りためてGRWMに自然に挿入。</p></div>
+</div>
+<div class="divider"></div>
+
+<!-- 6 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-sg">6</div><div class="sec-ttl">投稿スケジュール</div></div>
+  <div class="dsc">リール週3本・月12本。ストーリーズ毎日。</div>
+  <div class="sc"><div class="sc-d">火曜</div><div><h4>融合GRWM</h4><p>撮影40分＋編集60分</p></div></div>
+  <div class="sc"><div class="sc-d">木曜</div><div><h4>暮らしVlog</h4><p>撮影30分＋編集50分</p></div></div>
+  <div class="sc"><div class="sc-d">土曜</div><div><h4>GRWM or Vlog</h4><p>伸びたジャンル多めに</p></div></div>
+  <div class="co sg"><p><strong>撮りだめ＋ストーリーズのリズム</strong><br>休日にまとめ撮り。ストーリーズ毎日：垢抜け系は月〜水、自己肯定感系は木〜土。</p></div>
+</div>
+<div class="divider"></div>
+
+<!-- 7 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-bl">7</div><div class="sec-ttl">TikTok同時運用</div></div>
+  <div class="cd"><p>Instagram用の動画をそのまま投稿。TikTokは新規でもバズりやすい。バズったらインスタに誘導。</p></div>
+  <div class="st">ハッシュタグ</div>
+  <div class="tg"><span>#grwm</span><span>#asmr</span><span>#nightroutine</span><span>#skincare</span><span>#垢抜け</span><span>#垢抜けメイク</span><span>#夜型女子</span><span>#犬のいる暮らし</span><span>#ビフォーアフター</span><span>#スキンケアルーティン</span><span>#dogsofinstagram</span><span>#自己肯定感</span><span>#自分を好きになる</span></div>
+</div>
+<div class="divider"></div>
+
+<!-- 8 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-bg">8</div><div class="sec-ttl">3ヶ月ロードマップ</div></div>
+  <div class="tl">
+    <div class="tl-i"><h4>Month 1：型を作る</h4><div class="sub">2月末〜3月末</div><div class="tar">目標：500フォロワー</div><p>GRWMの型を固める。週3本。Instagram＋TikTok同時投稿。垢抜け話も自己肯定感の話も出さず「憧れ」を作ることに集中。</p></div>
+    <div class="tl-i"><h4>Month 2：パターンを見つける</h4><div class="sub">3月末〜4月中旬</div><div class="tar">目標：2,000〜3,000フォロワー</div><p>伸びた動画のパターンを分析→繰り返す。ストーリーズで垢抜け＋自己肯定感ストーリーを本格投入。副業匂わせ開始。</p></div>
+    <div class="tl-i"><h4>Month 3：加速させる</h4><div class="sub">4月中旬〜4/30</div><div class="tar">目標：10,000フォロワー</div><p>週4〜5本に増やす。ビフォーアフター投入。PR営業。垢抜けnote＋自己肯定感noteの両方を準備。</p></div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- 9 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-pk">9</div><div class="sec-ttl">ストーリーズ教育設計<span class="nb">v9強化</span></div></div>
+  <div class="dsc">垢抜け・自己肯定感・副業の話は全てストーリーズで段階的に。リールには一切出さない。</div>
+  <div class="ni"><span class="ni-tag t-lv">Level 1 ｜ 0〜1,000人</span><h4>匂わせだけ｜「この子何者？」を溜める</h4><p><strong>出す：</strong>犬の日常写真、愛用コスメ、「PM起床」「AM帰宅」のタイムスタンプ、PC作業風景<br><strong>出さない：</strong>垢抜け・自己肯定感・副業の話。一切なし。<br>毎日1〜3ストーリー。</p></div>
+  <div class="ni"><span class="ni-tag t-lv">Level 2 ｜ 1,000〜3,000人</span><h4>過去を小出し＋自己肯定感の種まき<span class="nb">強化</span></h4><p><strong>出す：</strong>「実は昔コンプレックスだらけだった」「昔は自分のこと好きじゃなかった」。質問箱設置。<br><strong>ハイライト：</strong>「about me」作成<br>毎日2〜4ストーリー。</p></div>
+  <div class="ni"><span class="ni-tag t-mind">Level 3 ｜ 3,000〜5,000人</span><h4>自己肯定感ストーリー本格投入<span class="nb">強化</span></h4><p><strong>出す：</strong>「自己肯定感が底だった頃の話」「自分を好きになれたきっかけ」「やめた3つのこと」「犬を飼って変わった話」「PCで色々やってる」<br><strong>ハイライト：</strong>「垢抜け」＋「自己肯定感」追加<br>毎日3〜5ストーリー。</p></div>
+  <div class="ni"><span class="ni-tag t-story">Level 4 ｜ 5,000〜10,000人</span><h4>note2本の予告＋需要確認<span class="nb">強化</span></h4><p>垢抜けnote・自己肯定感noteそれぞれで「欲しい人🙋‍♀️」アンケート。垢抜けnote先行→自己肯定感noteを1〜2週遅れでリリース（話題を2回作る）。毎日3〜5ストーリー。</p></div>
+  <div class="ni"><span class="ni-tag t-story">Level 5 ｜ 10,000人〜</span><h4>販売開始＋コンサル募集<span class="nb">強化</span></h4><p><strong>ローンチ週：</strong>Day1告知→Day2-3感想リポスト→Day4-5中身チラ見せ→Day6-7面談特典の限定感<br><strong>通常運用：</strong>週1感想リポスト、月1コンサル募集。noteクロスセル。SNS教材の伏線。</p></div>
+  <div class="co bg"><p><strong>リール × ストーリーズの役割分担</strong><br><strong>リール：</strong>GRWM＋Vlogで「憧れ」だけ。<br><strong>ストーリーズ：</strong>全ての「教育」と「販売」はここで。</p></div>
+</div>
+<div class="divider"></div>
+
+<!-- 10 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-wm">10</div><div class="sec-ttl">マネタイズ設計<span class="nb">v9強化</span></div></div>
+  <div class="dsc">note（2,980円）で集客 → 教材で収益の柱 → コンサルで高単価回収。</div>
+  <div class="st">Layer 1：広告収益</div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i1">🔗</div><div><div class="mc-w">0人〜</div><div class="mc-a">月0.5万〜5万</div></div></div><h4>アフィリエイト（美容・コスメ）</h4><p>楽天ROOM・Amazon。垢抜けストーリーが付くからCVR高い。</p></div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i2">💄</div><div><div class="mc-w">5,000人〜</div><div class="mc-a">1件0.5万〜3万</div></div></div><h4>美容PR案件（単発）</h4><p>「垢抜けた子が使ってる」文脈。DM営業も。</p></div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i2">🤝</div><div><div class="mc-w">10,000人〜</div><div class="mc-a">月5万〜15万/社</div></div></div><h4>美容PR案件（固定・月額）</h4><p>単発で実績→月額パッケージ提案。</p></div>
+
+  <div class="st">Layer 2：note（2,980円 × 3テーマ）<span class="nb">v9強化</span></div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i3">📖</div><div><div class="mc-w">5,000人〜</div><div class="mc-a">2,980円/本</div></div></div><h4>note①：垢抜け術</h4><p>スキンケア・メイク・ファッションの入門コンテンツ。</p></div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i4">🩷</div><div><div class="mc-w">5,000人〜</div><div class="mc-a">2,980円/本</div></div></div><h4>note②：自己肯定感の上げ方<span class="nb">NEW</span></h4><p>「自分を好きになれなかった私が変われた方法」。垢抜けnoteとクロスセル。</p></div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i3">📖</div><div><div class="mc-w">10,000人〜</div><div class="mc-a">2,980円/本</div></div></div><h4>note③：副業の始め方</h4><p>「夜職しながら副業を始めた話」。SNS教材への導線。</p></div>
+  <div class="co"><p><strong>noteが3本になるメリット</strong><br>① 3テーマで3倍の確率でどれかに刺さる<br>② クロスセルで客単価UP<br>③ ターゲット層の拡大<br>④ 教材への導線が2本に</p></div>
+
+  <div class="st">Layer 3：教材（29,800〜49,800円）</div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i1">💎</div><div><div class="mc-w">10,000人〜</div><div class="mc-a">29,800円</div></div></div><h4>垢抜け教材<span class="nb">自己肯定感 統合</span></h4><p>スキンケア・メイク・ファッション・マインド・自己肯定感・習慣まで網羅。30分面談付き。</p></div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i1">🔥</div><div><div class="mc-w">教材実績後</div><div class="mc-a">29,800〜49,800円</div></div></div><h4>SNS・副業教材</h4><p>SNS運用・副業・マネタイズ全てセット。30分面談付き。</p></div>
+
+  <div class="st">Layer 4：コンサル（高単価）</div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i1">👑</div><div><div class="mc-w">教材販売後</div><div class="mc-a">月10万/3ヶ月30万</div></div></div><h4>垢抜けコンサル（1〜3ヶ月）</h4><p>外見＋自己肯定感を個別アドバイス。月3〜5名限定。</p></div>
+  <div class="mc"><div class="mc-top"><div class="mc-ico i1">🔥</div><div><div class="mc-w">SNS教材後</div><div class="mc-a">6ヶ月49.8万/12ヶ月98万</div></div></div><h4>SNSコンサル（協業）</h4><p>あゆびが集客→パートナーが実務。月3〜5名限定。</p></div>
+  <div class="co wm"><p><strong>商品の階段</strong><br>アフィリ → PR → note 2,980円 → 教材 29,800円（面談付き）→ コンサル 10万〜98万</p></div>
+</div>
+<div class="divider"></div>
+
+<!-- 11 -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num n-pk">11</div><div class="sec-ttl">収益シミュレーション<span class="nb">v9再計算</span></div></div>
+  <div class="dsc">自己肯定感note追加でPhase 2以降の収益が底上げ。フル稼働で月700万円超。</div>
+  <div class="ph"><div class="ph-top"><span class="ph-lb">Phase 1 ｜ 〜1,000人</span><span class="ph-rv">月0〜0.5万</span></div><p><strong>アフィリ：</strong>月0〜5,000円。導線を作る練習期間。</p></div>
+  <div class="ph"><div class="ph-top"><span class="ph-lb">Phase 2 ｜ 1,000〜5,000人</span><span class="ph-rv">月4万〜18万<span class="up">↑UP</span></span></div><p><strong>アフィリ：</strong>月0.5万〜2万<br><strong>PR案件：</strong>月1万〜6万<br><strong>note① 垢抜け：</strong>月1.5万〜4.5万<br><strong>note② 自己肯定感：</strong>月1.5万〜4.5万</p></div>
+  <div class="ph"><div class="ph-top"><span class="ph-lb">Phase 3 ｜ 5,000〜10,000人</span><span class="ph-rv">月15万〜42万<span class="up">↑UP</span></span></div><p><strong>アフィリ：</strong>月1.5万〜4万<br><strong>PR案件：</strong>月3万〜15万<br><strong>note①：</strong>月4.5万〜9万<br><strong>note②：</strong>月4.5万〜7.5万</p></div>
+  <div class="ph"><div class="ph-top"><span class="ph-lb hot">Phase 4 ｜ 1万人 🔥</span><span class="ph-rv">月115万〜280万</span></div><p><strong>アフィリ＋PR：</strong>月7万〜20万<br><strong>note 3テーマ：</strong>月16万〜22万<br><strong>垢抜け教材ローンチ：</strong>59.6万〜149万<br><strong>コンサル初回：</strong>15万×3名＝45万</p></div>
+  <div class="ph"><div class="ph-top"><span class="ph-lb">Phase 5 ｜ 1万人〜 安定期</span><span class="ph-rv">月120万〜240万</span></div><p><strong>アフィリ＋PR：</strong>月10万〜30万<br><strong>note 3テーマ：</strong>月16万〜22万<br><strong>垢抜け教材：</strong>月30万〜75万<br><strong>コンサル：</strong>月45万〜100万</p></div>
+  <div class="ph"><div class="ph-top"><span class="ph-lb">Phase 6 ｜ 3万人〜</span><span class="ph-rv">月290万〜520万</span></div><p><strong>アフィリ＋PR：</strong>月20万〜40万<br><strong>note：</strong>月28万〜42万<br><strong>垢抜け教材：</strong>月60万〜90万<br><strong>SNS教材：</strong>月45万〜90万<br><strong>垢抜けコンサル：</strong>月60万〜100万<br><strong>協業コンサル：</strong>月100万〜150万</p></div>
+  <div class="ph"><div class="ph-top"><span class="ph-lb hot">Phase 7 ｜ フル稼働 🔥</span><span class="ph-rv">月700万〜960万</span></div><p><strong>PR固定3社：</strong>月30万<br><strong>note① 垢抜け ×70部：</strong>月20.9万<br><strong>note② 自己肯定感 ×60部：</strong>月17.9万<br><strong>note③ 副業 ×40部：</strong>月11.9万<br><strong>垢抜け教材 ×30部：</strong>月89.4万<br><strong>SNS教材 ×30部：</strong>月89.4万<br><strong>垢抜けコンサル ×5人：</strong>月100万<br><strong>協業コンサル ×5人：</strong>月249万〜490万<br>─────────<br><strong>合計：月708万〜960万</strong>（外注費▲15万）<br><br>v8上限840万 → v9で960万（+120万）。note3本で月50万のストック収益。</p></div>
+  <div class="co"><p><strong>v9の収益増加ポイント</strong><br>① 自己肯定感note追加：月17.9万のストック収益<br>② クロスセルで客単価1.3〜1.4倍<br>③ ターゲット層の拡大<br>④ 教材への導線が2本に<br>noteが3本になるだけで年間+1,440万。</p></div>
+  <div class="co bg"><p><strong>保守ケースでも月358万</strong><br>PR＋note3本＝60万 / 垢抜け教材20部＝59.6万 / SNS教材20部＝59.6万 / コンサル3人＝45万 / 協業コンサル3人＝149.4万<br><strong>保守合計：373.6万</strong>（外注費▲15万→手残り約358万）</p></div>
+  <div class="co wm"><p><strong>入口が3つになる導線</strong><br>STEP 1：note（2,980円 × 3テーマ）で体験<br>STEP 2：教材（29,800円）＋30分面談<br>STEP 3：面談→コンサル提案<br>STEP 4：コンサル（10万〜98万）<br><br>垢抜け・自己肯定感・副業どこからでも同じ階段。</p></div>
+  <div class="co mv"><p><strong>スケールの次の一手</strong><br>① 外注化（月10〜15万）<br>② 2つ目のアカウント<br>③ 教材リニューアル<br>④ 自己肯定感noteの派生：「恋愛と自己肯定感」「SNS疲れと自己肯定感」など</p></div>
+</div>
+
+<div class="ft">
+  あゆび Instagram Growth Strategy v9 ｜ 2026.02.25
+  <span class="ut">v9：自己肯定感をコンテンツ・note・教材・収益に完全統合</span>
+</div>
+
+</div>
+</body>
+</html>
